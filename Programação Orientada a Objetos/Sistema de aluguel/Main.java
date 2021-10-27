@@ -6,6 +6,8 @@ package T2;
 // calcular o valor do seu aluguel em relacao a quantidade de dias;
 // pesquisar se o item existe na lista de alugaveis atraves do nome
 // mostrar a lista completa de itens
+//
+// Autor: Arthur Mariano Foltz Barroso
 
 public class Main {
 
