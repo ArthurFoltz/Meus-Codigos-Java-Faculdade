@@ -19,6 +19,7 @@ public class CalculadoraCliente {
             System.out.println("4 - div");
             System.out.println("5 - store");
             System.out.println("6 - load");
+            System.out.println("7 - fat");
             System.out.println("0 - sair");
             boolean exec = true;
             double result;
@@ -49,6 +50,10 @@ public class CalculadoraCliente {
                     case 6:
                         System.out.printf("Input the position to be loaded\n");
                         result = c.load(in.nextInt());
+                        System.out.printf("Result: %.2f\n", result);
+                        break;
+                    case 7:
+                        result = c.fat(in.nextInt());
                         System.out.printf("Result: %.2f\n", result);
                         break;
                     case 0:

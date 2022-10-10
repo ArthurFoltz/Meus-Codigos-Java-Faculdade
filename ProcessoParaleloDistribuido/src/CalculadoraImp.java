@@ -35,6 +35,17 @@ public class CalculadoraImp extends UnicastRemoteObject implements Calculadora{
     }
 
     @Override
+    public Double fat(int x) throws RemoteException {
+        double temp = x;
+		double f = temp;
+		while (temp > 1){
+			f = f *(x-1); x--;
+		}
+		return f; // Aqui exibira o valor final do Fatorial 
+        //return memory[f];
+    }
+
+    @Override
     public void store(int x, double y) throws RemoteException {
         memory[x] = y;
     }

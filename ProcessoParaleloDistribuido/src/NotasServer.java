@@ -39,6 +39,7 @@ public class NotasServer {
 		byte[] numero 		= new byte[8];
 		while	(true) {
 			try {
+				//DatagramPacket pacIn = new DatagramPacket(nomeAluno, nomeAluno.length);
 				DatagramPacket pacIn = new DatagramPacket(nomeAluno, nomeAluno.length);
 				socket.receive(pacIn);
 				double nota = obtemNota(new String(pacIn.getData(), 0, pacIn.getLength()));
