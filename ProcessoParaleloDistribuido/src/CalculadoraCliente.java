@@ -53,6 +53,7 @@ public class CalculadoraCliente {
                         System.out.printf("Result: %.2f\n", result);
                         break;
                     case 7:
+                        System.out.println("entrei");
                         result = c.fat(in.nextInt());
                         System.out.printf("Result: %.2f\n", result);
                         break;

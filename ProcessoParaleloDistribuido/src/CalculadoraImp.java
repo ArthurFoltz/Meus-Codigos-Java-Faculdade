@@ -36,13 +36,15 @@ public class CalculadoraImp extends UnicastRemoteObject implements Calculadora{
 
     @Override
     public Double fat(int x) throws RemoteException {
+        System.out.println("d");
         double temp = x;
 		double f = temp;
 		while (temp > 1){
-			f = f *(x-1); x--;
+            System.out.println("dd");
+			f = f *(temp-1); temp--;
 		}
+        System.out.println("ddd");
 		return f; // Aqui exibira o valor final do Fatorial 
-        //return memory[f];
     }
 
     @Override
